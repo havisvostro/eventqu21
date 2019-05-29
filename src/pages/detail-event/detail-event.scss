@@ -1,0 +1,21 @@
+page-detail-event {
+    .icon-centered{
+        position: absolute; 
+        font-size:32px; 
+        color: #324755; 
+        top: 50%; 
+        left: 50%;  
+        transform: translate(-50%, -50%);
+    }
+
+    .fixed-button{
+        margin-bottom: 10px; 
+        background-color: #D97D54; 
+        border-radius: 30px;
+        width: 100%;
+    }
+   agm-map {
+height: 300px;
+width: 500px;
+}
+}

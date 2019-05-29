@@ -1,0 +1,23 @@
+<!--
+  Generated template for the MyEventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>MyEvent</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <ion-card *ngIf="events">>
+      <ion-card-content >
+          <img class="gambar1" src="{{events.poster}}">
+          <p class="padding-horizontal-md-only padding-top-md-only">{{events.tanggalMulai}} - {{events.tanggalSelesai}}</p>
+          <h1 class="padding-horizontal-md-only padding-vertical-xs-only">{{events.nama}}</h1>
+          <p class="padding-horizontal-md-only padding-top-xs-only">{{events.kuota}}</p>
+      </ion-card-content>
+     
+    </ion-card>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div>
+    <form #formLogIn="ngForm" (ngSubmit)="checkLogin(formLogIn)">
+        <ion-label>E-Mail</ion-label>
+        <div class="rounded">
+          <ion-input type="email" name="email" required ngModel ></ion-input>
+        </div>
+        <ion-label>Password</ion-label>
+        <ion-item class="rounded">
+          <ion-input [type]="passwordTypeLogIn" name="passwd1" required ngModel ></ion-input>
+          <button (click)="tooglePasswordLogIn()" ion-button clear item-right text-end>
+            <ion-icon name="eye" style="font-size:32px; color: #324755;" ></ion-icon>
+          </button> 
+        </ion-item>
+        <button style="border-radius: 30px;" ion-button type="submit" block color="rust">Log In</button><br>
+      </form>
+        <button style="border-radius: 30px;" ion-button type="submit" block color="rust" (click) = "register()">Register</button><br>
+
+    </div>
+  
+</ion-content>

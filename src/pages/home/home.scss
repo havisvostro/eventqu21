@@ -1,0 +1,11 @@
+page-home {
+    .bg-image{
+        background-image: url(../../assets/imgs/simple-cave.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .no-scroll{
+        overflow: hidden;
+    }
+}

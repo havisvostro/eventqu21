@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Event Detail</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content *ngIf="events">
+  <img style="padding-top: 15%" src="{{events.poster}}">
+  <h4 class="padding-horizontal-lg-only">{{ events.nama }}</h4>
+  <ion-grid class="padding-horizontal-lg-only">
+    <ion-row>
+      <ion-col col-2 style="position: relative;">
+        <ion-icon name="calendar" class="icon-centered"></ion-icon>
+      </ion-col>
+      <ion-col col-10>
+        <p>{{events.tanggalMulai}} - {{events.tanggalSelesai}}</p>
+        <p>{{events.waktuMulai}} - {{events.waktuSelesai}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2 style="position: relative;">
+          <ion-icon name="map" class="icon-centered"></ion-icon>
+        </ion-col>
+        <ion-col col-10>
+          <h6><b>Lokasi</b></h6>
+          <p>{{events.lokasi}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2 style="position: relative;">
+          <ion-icon name="pricetag" class="icon-centered"></ion-icon>
+        </ion-col>
+        <ion-col col-10>
+          <h6><b>Price</b></h6>
+          <p>{{events.price}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-2 style="position: relative;">
+            <ion-icon name="text" class="icon-centered"></ion-icon>
+          </ion-col>
+          <ion-col col-10>
+            <h6><b>Description</b></h6>
+            <p>{{events.deskripsi}}</p>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+  <div padding><hr></div>
+  <ion-row class="padding-horizontal-lg-only padding-bottom-xl-only">
+    <button ion-button class="fixed-button" (click)="navme(events.latLng)">Open Maps</button>
+    <button ion-button class="fixed-button" (click)="registerEvent(events._id)">Add Event</button>
+  </ion-row>
+</ion-content>

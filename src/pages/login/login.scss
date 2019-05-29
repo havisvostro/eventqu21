@@ -1,0 +1,41 @@
+page-login{
+    .bg {
+        background-color: #324755;
+        color: white;
+    }
+
+    @font-face {
+        font-family: BebasNeue-Regular;
+        src: url(../../assets/fonts/BebasNeue-Regular.woff2);
+    }
+
+    .fontBebasNeue{
+        font-family: BebasNeue-Regular;
+    }
+
+    @font-face {
+        font-family: Roboto;
+        src: url(../../assets/fonts/Roboto.woff2);
+    }F
+
+    .fontRoboto{
+        font-family: Roboto;
+    }
+
+    .rounded {
+        padding-top: 0px;
+        padding-inline-start: 15px;
+        padding-inline-end: 15px;
+        padding-bottom: 0px;
+        margin-bottom: 15px;
+        background-color: #D3D3D3;
+        color: #000000;
+        border: 1px solid #ccc;
+        font-size: 15px;
+        outline: 0;
+        width: 100%;
+        -moz-border-radius: 30px;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form #formSignUp="ngForm" (ngSubmit)="signUp(formSignUp)">
+        <ion-label>Full Name</ion-label>
+        <div class="rounded">
+          <ion-input class="test" type="text" value="wendy" name="name" required ngModel></ion-input>
+        </div>
+        <ion-label>E-Mail</ion-label>
+        <div class="rounded">
+          <ion-input type="email" name="email" required ngModel></ion-input>
+        </div>
+        <ion-label>Birthday</ion-label>
+        <div class="rounded">
+          <ion-input type="tanggalLahir" name="tanggalLahir" required ngModel></ion-input>
+        </div>
+        <ion-label>Password</ion-label>
+        <ion-item class="rounded">
+          <ion-input [type]="passwordTypeSignUp" name="passwd1" required ngModel ></ion-input>
+          <button (click)="tooglePasswordSignUp()" ion-button clear item-right text-end>
+            <ion-icon name="eye" style="font-size:32px; color: #324755;" ></ion-icon>
+          </button> 
+        </ion-item>
+
+        <button style="border-radius: 30px;" ion-button type="submit" block color="rust">Sign Up</button>
+      </form>
+
+</ion-content>

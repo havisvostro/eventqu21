@@ -1,0 +1,31 @@
+page-getting-started {
+	 .bg-image{
+	 	background-image:url(../assets/imgs/backgroundDepan.jpg);
+	 	background-repeat : no-repeat;
+	    min-height: 50% !important;
+		max-width: 100%;
+    	height: auto;
+	 }
+
+	 .no-scroll{
+	 	overflow:hidden;
+	 }
+
+	 .bg-image2{
+	 	background-repeat : no-repeat;
+	 	max-width : 200%;
+	 	height: auto;
+	 }
+
+	 .fixed-button{
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+		margin-bottom: 0px; 
+		padding: 32px 16px;
+		background-color: #D97D54; 
+		border-radius: 0;
+	}
+	
+}
